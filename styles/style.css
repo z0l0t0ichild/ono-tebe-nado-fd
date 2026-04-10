@@ -46,7 +46,7 @@
 }
 .stil_header_footer {
   font-style: normal;
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -60,7 +60,7 @@
   background-position: center;
   min-height: 757px;
   z-index: 0;
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   color: #fff;
 }
 
@@ -146,27 +146,28 @@
 .zagovok_slot {
   margin-top: 180px;
   margin-left: 64px;
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   font-size: 40px;
   font-weight: 700;
 }
 
 .ref_cartochka {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: 100%;
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   font-weight: 700;
   font-size: 22px;
   color: #fff;
   text-transform: uppercase;
   margin: 48px 40px 0 40px;
+  text-decoration: underline;
 }
 
 .card_text {
   position: relative;
   z-index: 2;
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   font-weight: 400;
   font-size: 20px;
   color: #fff;
@@ -213,7 +214,7 @@
 }
 
 .dop_info {
-  font-family: "Raleway";
+  font-family: "Raleway",serif;
   font-weight: 400;
   font-size: 20px;
   padding-left: 64px;
@@ -230,6 +231,7 @@
   grid-template-areas: "fon_logotip_about about_text";
   padding-left: 24px;
   padding-right: 24px;
+  font-family: "Raleway",serif;
 }
 
 .fon_logotip_about {
@@ -255,7 +257,7 @@
 }
 
 .abzac {
-  font-family: "Raleway";
+  
   font-weight: 400;
   font-size: 20px;
   display: flex;
@@ -265,7 +267,6 @@
 }
 
 .zagolovoc_about {
-  font-family: "Raleway";
   font-size: 40px;
   font-weight: 700;
   padding-top: 136px;
