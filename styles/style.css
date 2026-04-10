@@ -1,1 +1,308 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  min-height: 293px;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-areas: "spisok_menu logotip address";
+  align-items: center;
+  padding: 90px 52px 96px 50px;
+}
+
+.podcherk_fonts {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  list-style: circle;
+}
+
+.spisok_menu {
+  display: flex;
+  grid-area: spisok_menu;
+  gap: 33px;
+  list-style: none;
+}
+
+.logotip {
+  display: block;
+  width: 100%;
+  height: auto;
+  grid-area: logotip;
+}
+
+.logotip_image {
+  display: inline-block;
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  grid-area: address;
+  justify-self: end;
+  align-items: flex-start;
+  max-width: 240px;
+  margin-right: 32px;
+  line-height: 24px;
+}
+.stil_header_footer {
+  font-style: normal;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cover {
+  position: relative;
+  background-image: url(/images/cover.jpg);
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 757px;
+  z-index: 0;
+  font-family: "Raleway";
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.zagolovok_cover {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.zagolovok_first {
+  position: relative;
+  z-index: 3;
+  padding: 165px 764px 0 50px;
+  letter-spacing: 30px;
+}
+
+.zagolovok_center {
+  position: relative;
+  z-index: 3;
+  margin-top: -15px;
+  padding: 0 380.5px 0 380.5px;
+  letter-spacing: 30px;
+}
+
+.zagolovok_right {
+  position: relative;
+  z-index: 3;
+  margin-top: -10px;
+  padding: 0 50px 106px 663px;
+  letter-spacing: 30px;
+}
+
+.description {
+  z-index: 2;
+  display: flex;
+  gap: 105px;
+}
+
+.cover_description_text {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  word-spacing: 19px;
+  margin-top: 9px;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.button_stavka {
+  position: relative;
+  z-index: 3;
+  font-size: 22px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid #fff;
+  border-width: 1px;
+  color: #fff;
+  width: 256px;
+  height: 51px;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+
+.spisok_card {
+  display: flex;
+  gap: 25px;
+  padding: 27px 24px 30px 24px;
+}
+
+.zagovok_slot {
+  margin-top: 180px;
+  margin-left: 64px;
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ref_cartochka {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 48px 40px 0 40px;
+}
+
+.card_text {
+  position: relative;
+  z-index: 2;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 40px 49px 40px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+}
+
+.slot_cartochka_first {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 596px;
+  width: 334px;
+}
+
+.slot_cartochka_second {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 596px;
+  width: 334px;
+  background-image: url(/images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slot_cartochka_third {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 596px;
+  width: 334px;
+}
+
+.dop_info {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 64px;
+  text-underline-offset: 3px;
+}
+
+.about {
+  display: grid;
+  justify-items: center;
+  gap: 25px;
+  margin-top: 116px;
+  grid-template-columns: 334px auto;
+  grid-template-rows: 596px;
+  grid-template-areas: "fon_logotip_about about_text";
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.fon_logotip_about {
+  margin-top: 35px;
+  grid-area: fon_logotip_about;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+}
+
+.logotip_image_about {
+  width: 148px;
+  height: 114px;
+}
+
+.about_text {
+  padding-right: 24px;
+  grid-area: about_text;
+}
+
+.abzac {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 24px;
+}
+
+.zagolovoc_about {
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 136px;
+  padding-bottom: 100px;
+  text-transform: uppercase;
+}
+
+.footer {
+  margin-top: 182px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px;
+  grid-template-areas: "address_footer menu_footer cartinki_footer";
+}
+
+.cartinki_footer {
+  justify-self: center;
+  display: flex;
+  margin-right: 100px;
+  gap: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.menu_footer {
+  justify-self: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.address_footer {
+  font-style: normal;
+  line-height: 24px;
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+}
