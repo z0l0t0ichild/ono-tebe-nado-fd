@@ -1,21 +1,20 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./fonts/fonts.css"/>
-    <link rel="stylesheet" href="./styles/global.css"/>
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-  
-    <header class="header stil_header_footer">
+    <header class="header stile_header_footer">
       <nav>
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header_links_no-podcherk" href="">главная</a>
+            <a class="header__link_active" href="">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="">посмотреть лоты</a>
@@ -25,20 +24,16 @@
           </li>
         </ul>
       </nav>
-      <a class="logotip">
+      <a class="logo">
         <img
-          class="logotip_image"
+          class="logo_image"
           src="./images/logo-black.svg"
           alt="Логотип Оно тебе надо"
-        >
+        />
       </a>
-      <address class="address stil_header_footer">
-        <a class="header__links-list-item" href="tel:+99995555555"
-          >+9 999 555 5555</a
-        >
-        <a class="header__links-list-item" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
+      <address class="address_header address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-</span>
         <span>265, Амстердам</span>
       </address>
@@ -68,7 +63,7 @@
         <ul class="lots__card-list">
           <li class="card_type_film lots__card-list-item">
             <div class="overlay"></div>
-            <a class="header_links_no-podcherk" href="">
+            <a class="card_link" href="">
               <article class="card_ref">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -83,7 +78,7 @@
           </li>
           <li class="card_type_book lots__card-list-item">
             <div class="overlay"></div>
-            <a class="header_links_no-podcherk" href="">
+            <a class="card_link" href="">
               <article class="card_ref">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -101,7 +96,7 @@
           </li>
           <li class="card_type_picture lots__card-list-item">
             <div class="overlay"></div>
-            <a class="header_links_no-podcherk" href="">
+            <a class="card_link" href="">
               <article class="card_ref">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -119,17 +114,17 @@
         <a href="" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="fon_logotip_about">
+        <div class="about__logo">
           <img
-            class="logotip_image_about"
+            class="logo_image_about"
             src="./images/logo-white.svg"
             alt="Логотип"
-          >
+          />
         </div>
         <div class="about_text">
-          <h2 class="zagolovoc_about">Об аукционе</h2>
+          <h2 class="about__title">Об аукционе</h2>
 
-          <div class="abzac">
+          <div class="paragraph">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
@@ -150,39 +145,31 @@
         </div>
       </section>
     </main>
-    <footer class="footer stil_header_footer">
-      <address class="address_footer">
-        <a class="header__links-list-item" href="tel:+99995555555">
-          +9 999 555 5555
-        </a>
-        <a class="header__links-list-item" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
+    <footer class="footer stile_header_footer">
+      <address class="address address_footer">
+        <a class href="tel:+99995555555"> +9 999 555 5555 </a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-265,</span>
         <span> Амстердам</span>
       </address>
       <nav class="menu_footer">
-        <a class="header_links_no-podcherk" href="">главная</a>
+        <a class="footer__link_active" href="">главная</a>
         <a href="">посмотреть лоты</a>
         <a href="">об аукционе</a>
       </nav>
       <div class="link_social_footer">
         <a class="footer__social-link" href="#0">
-          <img class="footer__social-icon" src="./images/yt.svg" alt="Ютуб" >
+          <img class="footer__social-icon" src="./images/yt.svg" alt="Ютуб" />
         </a>
         <a class="footer__social-link" href="#0">
-          <img
-            class="footer__social-icon"
-            src="./images/vk.svg"
-            alt="ВК"
-          >
+          <img class="footer__social-icon" src="./images/vk.svg" alt="ВК" />
         </a>
         <a class="footer__social-link" href="#0">
           <img
             class="footer__social-icon"
             src="./images/pinterest.svg"
             alt="Пинтерест"
-          >
+          />
         </a>
       </div>
     </footer>
