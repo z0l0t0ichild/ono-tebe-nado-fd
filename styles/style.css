@@ -1,317 +1,190 @@
-.header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  grid-template-areas: "header__links-list logotip address";
-  align-items: center;
-  padding: 90px 52px 94px 50px;
-}
-.header_links_no-podcherk {
-  text-decoration: none;
-}
-.header__links-list-item {
-  text-underline-offset: 4px;
-  list-style: circle;
-}
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+  </head>
+  <body>
+  
+    <header class="header stil_header_footer">
+      <nav>
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header_links_no-podcherk" href="">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="logotip">
+        <img
+          class="logotip_image"
+          src="./images/logo-black.svg"
+          alt="Логотип Оно тебе надо"
+        >
+      </a>
+      <address class="address stil_header_footer">
+        <a class="header__links-list-item" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="header__links-list-item" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <span>наб. Принсенграхт 263-</span>
+        <span>265, Амстердам</span>
+      </address>
+    </header>
 
-.header__links-list {
-  display: flex;
-  grid-area: header__links-list;
-  gap: 33px;
-  list-style: none;
-}
+    <main>
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text_left">ОНО</span>
+          <span class="aligned-text_center"
+            >ТЕБ<span class="no-letter-spacing">Е</span></span
+          >
+          <span class="aligned-text_right"
+            >НАД<span class="no-letter-spacing">О</span></span
+          >
+        </h1>
+        <div class="description">
+          <p class="description cover_description_text">
+            аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button" type="button">Сделать ставку</button>
+        </div>
+      </section>
+      <section class="lots">
+        <h2 class="lots__heading">ЛОТЫ</h2>
+        <ul class="lots__card-list">
+          <li class="card_type_film lots__card-list-item">
+            <div class="overlay"></div>
+            <a class="header_links_no-podcherk" href="">
+              <article class="card_ref">
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card_text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="card_type_book lots__card-list-item">
+            <div class="overlay"></div>
+            <a class="header_links_no-podcherk" href="">
+              <article class="card_ref">
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card_text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="card_type_picture lots__card-list-item">
+            <div class="overlay"></div>
+            <a class="header_links_no-podcherk" href="">
+              <article class="card_ref">
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card_text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="lots__look-more-link">посмотреть больше</a>
+      </section>
+      <section class="about">
+        <div class="fon_logotip_about">
+          <img
+            class="logotip_image_about"
+            src="./images/logo-white.svg"
+            alt="Логотип"
+          >
+        </div>
+        <div class="about_text">
+          <h2 class="zagolovoc_about">Об аукционе</h2>
 
-.logotip {
-  display: block;
-  width: 100%;
-  height: auto;
-  grid-area: logotip;
-}
-
-.logotip_image {
-  display: inline-block;
-  width: 148px;
-  height: 105px;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  grid-area: address;
-  justify-self: end;
-  align-items: flex-start;
-  max-width: 240px;
-  margin-right: 32px;
-  line-height: 24px;
-}
-.stil_header_footer {
-  font-style: normal;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.cover {
-  position: relative;
-  background-image: url('../images/cover.jpg');
-  margin: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 757px;
-  z-index: 0;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.cover__title {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  font-size: 100px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 165px 50px 106px 50px;
-}
-
-.aligned-text_left {
-  align-self: flex-start;
-  position: relative;
-  z-index: 3;
-  letter-spacing: 30px;
-}
-
-.aligned-text_center {
-  align-self: center;
-  position: relative;
-  z-index: 3;
-  margin-top: -15px;
-  letter-spacing: 30px;
-}
-
-.aligned-text_right {
-  align-self: flex-end;
-
-  position: relative;
-  z-index: 3;
-  margin-top: -10px;
-  letter-spacing: 30px;
-}
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
-.description {
-  z-index: 2;
-  display: flex;
-  gap: 105px;
-}
-
-.cover_description_text {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 400;
-  word-spacing: 19px;
-  margin-top: 9px;
-  text-transform: uppercase;
-  padding-left: 50px;
-}
-
-.bet-button {
-  position: relative;
-  z-index: 3;
-  font-size: 22px;
-  font-weight: 500;
-  background: transparent;
-  border: 1px solid #fff;
-  border-width: 1px;
-  color: #fff;
-  width: 256px;
-  min-height: 51px;
-  text-transform: uppercase;
-}
-
-.lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 27px 24px 30px 24px;
-}
-
-.lots__heading {
-  margin-top: 180px;
-  margin-left: 64px;
-  font-family: "Raleway", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.card__title {
-  position: relative;
-  z-index: 3;
-  height: 100%;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 48px 40px 0 40px;
-  text-decoration: underline;
-}
-
-.card_text {
-  position: relative;
-  z-index: 2;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-  padding: 0 40px 49px 40px;
-  line-height: 1.2;
-  letter-spacing: 0%;
-  text-decoration: none;
-}
-
-.card_ref {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card_type_film {
-  background-image: url('../images/card-lot-01.jpg');
-}
-
-.card_type_book {
-  background-image: url('../images/card-lot-02.jpg');
-}
-
-.card_type_picture {
-  background-image: url('../images/card-lot-03.jpg');
-}
-.lots__card-list-item {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 596px;
-  width: 334px;
-  position: relative;
-  list-style: none;
-}
-
-.lots__look-more-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  padding-left: 64px;
-  text-underline-offset: 3px;
-}
-
-.about {
-  display: grid;
-  justify-items: center;
-  gap: 25px;
-  margin-top: 118px;
-  grid-template-columns: 334px auto;
-  grid-template-rows: auto;
-  grid-template-areas: "fon_logotip_about about_text";
-  padding-left: 24px;
-  padding-right: 24px;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 182px;
-}
-
-.fon_logotip_about {
-  margin-top: 35px;
-  grid-area: fon_logotip_about;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
-}
-
-.logotip_image_about {
-  width: 148px;
-  height: 114px;
-}
-
-.about_text {
-  padding-right: 24px;
-  grid-area: about_text;
-}
-
-.abzac {
-  font-weight: 400;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  line-height: 24px;
-}
-
-.zagolovoc_about {
-  font-size: 40px;
-  font-weight: 700;
-  padding-top: 136px;
-  padding-bottom: 100px;
-  text-transform: uppercase;
-}
-
-.footer {
-  margin-top: 182px;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 180px;
-  grid-template-areas: "address_footer menu_footer link_social_footer";
-}
-
-.link_social_footer {
-  display: flex;
-  gap: 48px;
-  justify-self: end;
-  align-items: flex-start;
-}
-
-.menu_footer {
-  justify-self: center;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-}
-
-.address_footer {
-  font-style: normal;
-  line-height: 24px;
-  justify-self: start;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__social-link {
-  display: inline-block;
-}
-
-.footer__social-icon {
-  display: block;
-  height: 48px;
-  width: 48px;
-}
+          <div class="abzac">
+            <p>
+              Здесь вы не встретите очередное пафосное собрание невероятно
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
+            </p>
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё
+              время. В пух и прах растерзанные критиками. Непринятые и
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              на критику, кажущуюся простоту или сложность, сейчас без этих
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer stil_header_footer">
+      <address class="address_footer">
+        <a class="header__links-list-item" href="tel:+99995555555">
+          +9 999 555 5555
+        </a>
+        <a class="header__links-list-item" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <span>наб. Принсенграхт 263-265,</span>
+        <span> Амстердам</span>
+      </address>
+      <nav class="menu_footer">
+        <a class="header_links_no-podcherk" href="">главная</a>
+        <a href="">посмотреть лоты</a>
+        <a href="">об аукционе</a>
+      </nav>
+      <div class="link_social_footer">
+        <a class="footer__social-link" href="#0">
+          <img class="footer__social-icon" src="./images/yt.svg" alt="Ютуб" >
+        </a>
+        <a class="footer__social-link" href="#0">
+          <img
+            class="footer__social-icon"
+            src="./images/vk.svg"
+            alt="ВК"
+          >
+        </a>
+        <a class="footer__social-link" href="#0">
+          <img
+            class="footer__social-icon"
+            src="./images/pinterest.svg"
+            alt="Пинтерест"
+          >
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
