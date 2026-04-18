@@ -1,22 +1,24 @@
 .header {
   display: grid;
-  min-height: 293px;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-areas: "spisok_menu logotip address";
+  grid-template-areas: "header__links-list logotip address";
   align-items: center;
-  padding: 90px 52px 96px 50px;
+  padding: 90px 52px 94px 50px;
 }
-
-.podcherk_fonts {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+.header_links_no-podcherk {
+  text-decoration: none;
+}
+.header__links-list-item {
   text-underline-offset: 4px;
   list-style: circle;
 }
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
 
-.spisok_menu {
+.header__links-list {
   display: flex;
-  grid-area: spisok_menu;
+  grid-area: header__links-list;
   gap: 33px;
   list-style: none;
 }
@@ -46,21 +48,21 @@
 }
 .stil_header_footer {
   font-style: normal;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .cover {
   position: relative;
-  background-image: url(/images/cover.jpg);
+  background-image: url('../images/cover.jpg');
   margin: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 757px;
   z-index: 0;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
@@ -73,7 +75,7 @@
   background-color: rgba(0, 0, 0, 1);
 }
 
-.zagolovok_cover {
+.cover__title {
   position: relative;
   z-index: 3;
   display: flex;
@@ -81,29 +83,35 @@
   gap: 30px;
   font-size: 100px;
   font-weight: 700;
+  text-transform: uppercase;
+  padding: 165px 50px 106px 50px;
 }
 
-.zagolovok_first {
+.aligned-text_left {
+  align-self: flex-start;
   position: relative;
   z-index: 3;
-  padding: 165px 764px 0 50px;
   letter-spacing: 30px;
 }
 
-.zagolovok_center {
+.aligned-text_center {
+  align-self: center;
   position: relative;
   z-index: 3;
   margin-top: -15px;
-  padding: 0 380.5px 0 380.5px;
   letter-spacing: 30px;
 }
 
-.zagolovok_right {
+.aligned-text_right {
+  align-self: flex-end;
+
   position: relative;
   z-index: 3;
   margin-top: -10px;
-  padding: 0 50px 106px 663px;
   letter-spacing: 30px;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .description {
@@ -122,7 +130,7 @@
   padding-left: 50px;
 }
 
-.button_stavka {
+.bet-button {
   position: relative;
   z-index: 3;
   font-size: 22px;
@@ -132,30 +140,30 @@
   border-width: 1px;
   color: #fff;
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   text-transform: uppercase;
-  margin-top: -5px;
 }
 
-.spisok_card {
+.lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   padding: 27px 24px 30px 24px;
 }
 
-.zagovok_slot {
+.lots__heading {
   margin-top: 180px;
   margin-left: 64px;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
 
-.ref_cartochka {
+.card__title {
   position: relative;
   z-index: 3;
   height: 100%;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: #fff;
@@ -167,54 +175,46 @@
 .card_text {
   position: relative;
   z-index: 2;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #fff;
   padding: 0 40px 49px 40px;
   line-height: 1.2;
   letter-spacing: 0%;
+  text-decoration: none;
 }
 
-.slot_cartochka_first {
-  position: relative;
+.card_ref {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+}
+.lots__card-list-item {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
-}
-
-.slot_cartochka_second {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 596px;
-  width: 334px;
-  background-image: url(/images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  list-style: none;
 }
 
-.slot_cartochka_third {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-image: url(/images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 596px;
-  width: 334px;
-}
-
-.dop_info {
-  font-family: "Raleway",serif;
+.lots__look-more-link {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   padding-left: 64px;
@@ -225,13 +225,14 @@
   display: grid;
   justify-items: center;
   gap: 25px;
-  margin-top: 116px;
+  margin-top: 118px;
   grid-template-columns: 334px auto;
-  grid-template-rows: 596px;
+  grid-template-rows: auto;
   grid-template-areas: "fon_logotip_about about_text";
   padding-left: 24px;
   padding-right: 24px;
-  font-family: "Raleway",serif;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 182px;
 }
 
 .fon_logotip_about {
@@ -257,7 +258,6 @@
 }
 
 .abzac {
-  
   font-weight: 400;
   font-size: 20px;
   display: flex;
@@ -281,16 +281,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 180px;
-  grid-template-areas: "address_footer menu_footer cartinki_footer";
+  grid-template-areas: "address_footer menu_footer link_social_footer";
 }
 
-.cartinki_footer {
-  justify-self: center;
+.link_social_footer {
   display: flex;
-  margin-right: 100px;
   gap: 48px;
-  width: 48px;
-  height: 48px;
+  justify-self: end;
+  align-items: flex-start;
 }
 
 .menu_footer {
@@ -306,4 +304,14 @@
   justify-self: start;
   display: flex;
   flex-direction: column;
+}
+
+.footer__social-link {
+  display: inline-block;
+}
+
+.footer__social-icon {
+  display: block;
+  height: 48px;
+  width: 48px;
 }
